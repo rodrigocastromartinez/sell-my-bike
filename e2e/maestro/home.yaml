@@ -1,0 +1,23 @@
+appId: "com.rodrigocastromartinez.sellmybike"
+---
+- launchApp
+- tapOn: "Cacharra ID: MOTO_B MODEL: ADV750"
+- tapOn: Date Picker
+- tapOn: "29"
+- tapOn:
+    point: 25%,90%
+- tapOn: Set Date
+- assertVisible: 29/10/2024
+- tapOn: Ok
+- tapOn: Go Back
+- tapOn: "Cacharra ID: MOTO_B MODEL: ADV750"
+- assertVisible: 29 Nov 2024
+- tapOn: Go Back
+- tapOn: "Favorita ID: MOTO_A MODEL: AVR123"
+- tapOn: Date Picker
+- tapOn: "29"
+- tapOn:
+    point: 25%,90%
+- tapOn: Go Back
+- tapOn: "Favorita ID: MOTO_A MODEL: AVR123"
+- assertNotVisible: 29 Nov 2024

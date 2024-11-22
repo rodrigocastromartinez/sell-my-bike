@@ -1,5 +1,3 @@
-import { MotorbikeDetails } from "../types/types";
-
 function differenceInYears(date1: Date, date2: Date): number {
   const year1 = date1.getFullYear();
   const year2 = date2.getFullYear();
