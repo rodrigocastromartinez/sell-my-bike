@@ -15,7 +15,7 @@ export default function Card({ details }: CardProps) {
 
   const handlePress = () => {
     if (details.id) {
-      navigation.navigate("details", { details });
+      navigation.navigate("details", { id: details.id });
     }
   };
 

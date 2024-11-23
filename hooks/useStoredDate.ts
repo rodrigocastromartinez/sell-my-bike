@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export const useStoredDate = (id: string) => {
+export const useStoredDate = (id: string | undefined) => {
   const [date, setDate] = useState(new Date());
   const DATE_KEY = `selectedDate_${id}`;
 
